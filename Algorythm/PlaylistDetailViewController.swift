@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PlaylistDetailViewController.swift
 //  Algorythm
 //
 //  Created by Vincent Cohen on 17/05/16.
@@ -8,11 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PlaylistDetailViewController: UIViewController {
 
+    @IBOutlet weak var buttonPressLabel: UILabel!
+    
+    var segueLabelText:String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        buttonPressLabel.text = segueLabelText;
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +25,4 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
-
